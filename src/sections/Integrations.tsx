@@ -5,7 +5,6 @@ import slackLogo from "@/assets/images/slack-logo.svg"
 import relumeLogo from "@/assets/images/relume-logo.svg"
 import framerLogo from "@/assets/images/framer-logo.svg"
 import githubLogo from "@/assets/images/github-logo.svg"
-import Image from "next/image";
 import Integrationscolumn from "@/components/Integrationscolumn";
 
 

@@ -1,4 +1,3 @@
-import { a, section } from "framer-motion/client";
 import Image from "next/image";
 import logoImage from "@/assets/images/logo.svg"
 import Button from "@/components/Button";

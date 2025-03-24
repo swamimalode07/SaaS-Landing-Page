@@ -1,4 +1,3 @@
-import { section } from "framer-motion/client";
 import Button from "@/components/Button";
 import designExample1Image from "@/assets/images/design-example-1.png"
 import designExample2Image from "@/assets/images/design-example-2.png"
