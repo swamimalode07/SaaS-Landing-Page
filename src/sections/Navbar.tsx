@@ -15,8 +15,7 @@ export default function Navbar() {
         <div className="container max-w-5xl">
             <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15  rounded-full p-2 px-4 md:pr-2  items-center ">
                 <div>
-                <Image src="/logo.svg" alt="Logo image"    width={120}
-                            height={46} priority 
+                <Image src="/logo.svg" alt="Logo image" width={120} height={46}
         />
                 </div>
                 <div className="lg:flex justify-center items-center hidden">
