@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logoImage from "@/assets/images/logo.svg"
 import Button from "@/components/Button";
+import logo from "@/assets/images/logo.svg"
 
 const navLinks = [
     { label: "Home", href: "#" },
@@ -15,7 +15,8 @@ export default function Navbar() {
         <div className="container max-w-5xl">
             <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15  rounded-full p-2 px-4 md:pr-2  items-center ">
                 <div>
-                    <Image src={logoImage} className="h-9 md:h-auto w-auto  " alt="logo"/>
+                <Image src={logo} alt="Logo image" className="h-9 md:h-auto w-auto" priority 
+        />
                 </div>
                 <div className="lg:flex justify-center items-center hidden">
                     <nav className="flex gap-6 font-medium">
