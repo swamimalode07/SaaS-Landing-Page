@@ -27,11 +27,11 @@ export default function Introduction() {
     return (
     <section className="py-28  lg:py-40">    
         <div className="container">
-            <div className="sticky top-20 ">
+            <div className="sticky top-20 md:top-28">
                 <div className="flex justify-center ">
                 <Tag>Introducing Layers</Tag>
                 </div> 
-                <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">
+                <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10 lg:top-40">
                     <span className="">your creative process deserves better.</span> {" "}
                     <span className="">
                     {words.map((word,wordIndex)=>(

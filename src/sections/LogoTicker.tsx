@@ -12,15 +12,16 @@ import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  { name: "Quantum", image: quantumLogo },
-  { name: "Acme Corp", image: acmeLogo },
-  { name: "Echo Valley", image: echoValleyLogo },
-  { name: "Pulse", image: pulseLogo },
-  { name: "Outside", image: outsideLogo },
-  { name: "Apex", image: apexLogo },
-  { name: "Celestial", image: celestialLogo },
-  { name: "Twice", image: twiceLogo },
+  { name: "Quantum", image: "/images/quantum.svg" },
+  { name: "Acme Corp", image: "/images/acme-corp.svg" },
+  { name: "Echo Valley", image: "/images/echo-valley.svg" },
+  { name: "Pulse", image: "/images/pulse.svg" },
+  { name: "Outside", image: "/images/outside.svg" },
+  { name: "Apex", image: "/images/apex.svg" },
+  { name: "Celestial", image: "/images/celestial.svg" },
+  { name: "Twice", image: "/images/twice.svg" },
 ];
+
 
 export default function LogoTicker() {
   return (
@@ -45,12 +46,15 @@ export default function LogoTicker() {
             {Array.from({ length: 2 }).map((_, i) => (
               <Fragment key={i}>
                 {logos.map((logo) => (
-                  <Image
-                    src={logo.image}
-                    key={logo.name}
-                    alt={logo.name}
-                    loading="lazy" 
-                  />
+                <Image
+                src={logo.image}
+                key={logo.name}
+                alt={logo.name}
+                loading="lazy"
+                width={200} 
+                height={100}
+              />
+              
                 ))}
               </Fragment>
             ))}
