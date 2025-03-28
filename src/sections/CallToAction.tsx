@@ -1,12 +1,13 @@
 "use client";
-import { motion, useAnimate } from "framer-motion";
+import { motion, useAnimate, AnimationPlaybackControls } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function CallToAction() {
   const [isHovered, setIsHovered] = useState(false);
-
   const [scope, animate] = useAnimate();
-  const [animation, setAnimation] = useState(null);
+
+  // Explicitly typing the animation state
+  const [animation, setAnimation] = useState<AnimationPlaybackControls | null>(null);
 
   useEffect(() => {
     const startAnimation = async () => {
@@ -22,7 +23,7 @@ export default function CallToAction() {
 
   useEffect(() => {
     if (animation) {
-      animation.speed = isHovered ? 0.5 : 1;
+      animation.speed = isHovered ? 0.3 : 1;
     }
   }, [isHovered, animation]);
 

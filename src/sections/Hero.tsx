@@ -40,7 +40,14 @@ export default function Hero() {
         ])
         
 
-    },[])
+    },[  leftPointerAnimate,
+        rightPointerAnimate,
+        leftPointerScope,
+        rightPointerScope,
+        leftDesignAnimate,
+        leftDesignScope,
+        rightDesignAnimate,
+        rightDesignScope,])
 
     return <section className="py-24 overflow-x-clip " style={{ 
         cursor:`url(${cursorYouImage.src}),auto`
