@@ -3,7 +3,7 @@
 import Tag from "@/components/Tag";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { motion, AnimatePresence, animate } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
     {
         question: "How is Layers different from other design tools?",
@@ -57,7 +57,7 @@ export default function Faqs() {
                         <motion.div
                          initial={{
                             height:0,
-                            margin:0,
+                            margin:0,   
                          }}
                          animate={{
                             height:"auto",
